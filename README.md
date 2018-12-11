@@ -28,6 +28,6 @@ refresh token을 갱신/재발급
 생성한 이미지는 docker-compose로 한번에 실행  
 이미지 제공하기 위해 nginx를 사용
 개발 환경과 배포 환경의 일치
-CI, CD를 용이하게 하기 위함
+CI, CD를 용이하게 하기 위함  
 [docker hub](https://hub.docker.com/u/minudev1212/)  
 [레포지토리](https://github.com/anomie7/withkid-dockerFile)
