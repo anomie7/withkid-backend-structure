@@ -30,4 +30,9 @@ refresh token을 갱신/재발급
 개발 환경과 배포 환경의 일치  
 CI, CD를 용이하게 하기 위함  
 [docker hub](https://hub.docker.com/u/minudev1212/)  
-[레포지토리](https://github.com/anomie7/withkid-dockerFile)
+[레포지토리](https://github.com/anomie7/withkid-dockerFile)  
+
+## 부하 테스트
+
+ngrinder을 docker를 이용하여 실행  
+redis, resource-server, nginx 모두 vuser 100으로 3분간 실행했으나 서버 다운은 없었음.  
