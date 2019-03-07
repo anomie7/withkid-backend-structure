@@ -20,15 +20,22 @@ refresh token을 갱신/재발급
 콘텐츠 캐싱(레디스)  
 사용자 로그 저장(레디스)  
 [레포지토리](https://github.com/anomie7/withKid-api-server)  
-[Swagger UI](https://www.withkid.tk:8081/swagger-ui.html#!/interpark-rest-controller/getEventUsingGET)  
 
-## Docker Container
+## 웹 서버(nginx)
 
+### 정적 자원 서버  
+spa를 제공  
+이미지 제공  
+
+### 로드밸런서  
+letsencrypt의 ssl 인증서로 https 도입  
+reverse proxy로 인증 서버와 리소스 서버에 해당하는 docker service를 매핑
+## 인프라 관리(Docker)
+개발 환경과 배포 환경의 일치와 CI, CD를 용이하게 하기 위해 도입  
+  
 인증 서버와 api 서버의 빌드한 jar 파일을 image로 배포  
 생성한 이미지는 docker-compose.yml 파일로 한번에 실행  
 간편한 컨테이너 관리와 확장을 위해 docker swarm 도입  
-개발 환경과 배포 환경의 일치  
-CI, CD를 용이하게 하기 위함  
 [docker hub](https://hub.docker.com/u/minudev1212/)  
 [레포지토리](https://github.com/anomie7/withkid-dockerFile)  
 
