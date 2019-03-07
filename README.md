@@ -20,7 +20,7 @@ refresh token을 갱신/재발급
 콘텐츠 캐싱(레디스)  
 사용자 로그 저장(레디스)  
 [레포지토리](https://github.com/anomie7/withKid-api-server)  
-[Swagger UI](https://52.79.118.191:8081/swagger-ui.html#!/interpark-rest-controller/getEventUsingGET)  
+[Swagger UI](https://:8081/swagger-ui.html#!/interpark-rest-controller/getEventUsingGET)  
 
 ## Docker Container
 
