@@ -1,6 +1,6 @@
 # withkid-backend-structure
-위드키드 백엔드 설명
-
+백엔드 워크플로우
+![backend workflow](https://user-images.githubusercontent.com/26598127/54739505-bfe76c00-4bfb-11e9-94fc-e65eb4f8e7f3.jpg)
 ## 웹 크롤러
 
 아동용 문화 컨텐츠를 수집하는 웹 크롤러  
@@ -20,7 +20,13 @@ refresh token을 갱신/재발급
 콘텐츠 캐싱(레디스)  
 사용자 로그 저장(레디스)  
 [레포지토리](https://github.com/anomie7/withKid-api-server)  
-
+## ULOG 서버
+스토리지는 Firebase의 Firestore 사용  
+유저의 검색 조건 저장  
+유저의 이벤트 로그 저장  
+전체 이벤트의 조회수 저장  
+서비스에 접속한 당일 이전의 7일간 가장 많이 검색한 지역과 카테고리를 반환하는 기능('전체' 조건은 제외)  
+[레포지토리](https://github.com/anomie7/withKid-ulog-server)  
 ## 웹 서버(nginx)
 
 ### 정적 자원 서버  
